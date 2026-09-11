@@ -1,0 +1,19 @@
+{
+  "name": "pr-lab",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "lint": "eslint .",
+    "typecheck": "tsc -b --pretty false",
+    "test": "vitest run",
+    "validate:content": "tsx scripts/validate-content.ts",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": { "@vitejs/plugin-react": "latest", "idb": "latest", "lucide-react": "latest", "react": "latest", "react-dom": "latest", "vite": "latest", "vite-plugin-pwa": "latest" },
+  "devDependencies": { "@eslint/js": "latest", "@playwright/test": "latest", "@types/node": "latest", "@types/react": "latest", "@types/react-dom": "latest", "eslint": "latest", "eslint-plugin-react-hooks": "latest", "eslint-plugin-react-refresh": "latest", "jsdom": "latest", "tsx": "latest", "typescript": "latest", "typescript-eslint": "latest", "vitest": "latest" }
+}
